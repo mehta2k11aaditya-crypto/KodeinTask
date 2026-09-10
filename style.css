@@ -1,0 +1,91 @@
+.bg{
+    background-color: #0B0B0F;
+    /* background-color: #8B5CF6; */
+
+}
+
+.white{
+    color: #F5F5F5;
+}
+
+.purple{
+    color: #8B5CF6;
+}
+
+.dark-gray{
+    color: #15151C;
+}
+
+.button{
+    padding: 1px;
+}
+
+h1{
+    margin: 10px 20px;
+    font-family: monospace, Arial, Helvetica, sans-serif;
+}
+
+.navbar{
+    display: flex;
+}
+
+.flexRight{
+    margin-left: auto;
+}
+
+.centralize{
+    display: block;
+    /* background-color: aquamarine; */
+    justify-content: center;
+}
+
+.hidden{
+    display: none;
+}
+
+.cards-join{
+    display: flex;
+    gap: 1em;
+}
+
+.card{
+    border-style: solid;
+    margin: 5px;
+    padding: 10px;
+    border-color: rgb(129, 43, 173);
+    font-family: 'Courier New', Courier, monospace, arial;
+}
+
+.card-bronze{
+    border-style: solid;
+    margin: 5px;
+    padding: 10px;
+    border-color: rgb(173, 160, 43);
+    font-family: 'Courier New', Courier, monospace, arial;
+}
+
+.card-silver{
+    border-style: solid;
+    margin: 5px;
+    padding: 10px;
+    border-color: rgb(93, 199, 194);
+    font-family: 'Courier New', Courier, monospace, arial;
+}
+.card-gold{
+    border-style: solid;
+    margin: 5px;
+    padding: 10px;
+    border-color: rgb(173, 43, 108);
+    font-family: 'Courier New', Courier, monospace, arial;
+}
+
+fieldset{
+    border-style: solid;
+    margin: 5px;
+    padding: 10px;
+    border-color: rgb(129, 43, 173);
+    font-family: 'Courier New', Courier, monospace, arial;
+}
+legend{
+    color: #7e54b5;
+}
