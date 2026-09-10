@@ -3,26 +3,355 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fest Ticket Generator HOME</title>
+    <title>Fest Ticket Generator</title>
+    <link rel="icon" href="logo.png">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="bg white">
+    
     <header>
-        <p>Kodein KGP</p>
-        <nav>
-            <a href="#">HOME</a>
-            <a href="#">Generate Ticket</a>
-            <a href="#">My Passes</a>
-        </nav>
+        <div class="navbar">
+            <span>Kodein KGP</span>
+            <nav class="flexRight">
+                <a href="#" class="button"><button>HOME</button></a>
+                <a href="#" class="button"><button>Generate Ticket</button></a>
+                <a href="#" class="button"><button>My Passes</button></a>
+            </nav>
+        </div>
+
+        <h1>Fest 2026 - Futuristic Cyber/ Festival Aesthetic</h1>
 
     </header>
-    <body>
+    <hr>
+    <main>
+        <p>Fest 2026 <br> KodeinKGP </p>
+        <section id="main">
+            <span class="purple">YOUR FEST <br> YOUR EXPERIECE <br> Create your personalised digital festival pass </span>
+            <p> 
+                Following will be the pages for completing the ticket generation
+            </p>
+            <!-- <ol>
+                <li> Details </li>
+                <li> Artist </li>
+                <li> Food </li>
+                <li> Games </li>
+                <li> Pass </li>
+                <li> Review </li>
+            </ol> -->
 
-        <h1> Introduction </h1>
-        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae dolorum est fuga obcaecati natus vero assumenda tenetur earum voluptatum, voluptas temporibus reprehenderit nam modi minima dolore ratione quos doloribus provident necessitatibus, et quam cum impedit. Quos ipsa quibusdam nulla incidunt, quidem corporis nam voluptatem cum. Eligendi ipsam enim harum sapiente placeat blanditiis illum minima culpa voluptatibus reiciendis vel quasi molestias, et totam obcaecati repellat. Vel ab laudantium sapiente voluptates impedit!</p>
+            <section class="cards">
+                <div class="cards-join">
 
-    </body>
+                    <div class="card">
+                        <h2>1. Details</h2>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque nulla minus quis dicta libero. Id inventore itaque saepe numquam eum!
+                        </p>
+                    </div>
+                        <div class="card">
+                            <h2>2. Artist</h2>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque nulla minus quis dicta libero. Id inventore itaque saepe numquam eum!
+                            </p>
+                        </div>
+                    </div>
+                <div class="cards-join">
+                    <div class="card">
+                        <h2>3. Food</h2>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque nulla minus quis dicta libero. Id inventore itaque saepe numquam eum!
+                        </p>
+                    </div>
+                    <div class="card">
+                        <h2>4. Games</h2>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque nulla minus quis dicta libero. Id inventore itaque saepe numquam eum!
+                        </p>
+                    </div>
+                    </div>
+                <div class="cards-join">
+                    <div class="card">
+                        <h2>5. Digital Pass</h2>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque nulla minus quis dicta libero. Id inventore itaque saepe numquam eum!
+                        </p>
+                    </div>
+                    <div class="card">
+                        <h2>6. Review</h2>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque nulla minus quis dicta libero. Id inventore itaque saepe numquam eum!
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+
+            <button  type="button" onclick="next()">Generate Ticket</button>
+        </section>
+
+        <section id="details">
+            <h2>Your Details</h2>
+            <form>
+                <fieldset>
+                    <legend>Enter your details</legend>
+                    <div class="cards-join">
+                        <div>
+                            <label for="name">Full Name</label>
+                            <input id="name"><br><br>
+
+                            <label for="roll">Institution Roll No</label>
+                            <input id="roll" placeholder="eg. 26MF10019"><br><br>
+                            
+
+                            <label>Image Url</label>
+                            <button type="button" onclick="checkPreview()">Check Preview</button>
+                            <input id="img-url" placeholder="https://..."><br><br>
+                        </div>
+                        <img id="img-preview" src="https://picsum.photos/150/150"><br>
+                    </div>
+                    <button type="button" onclick="validateForm()">Confirm</button>
+                    <button type="reset">reset</button>
+
+                </fieldset>
+
+            </form>
+
+        </section>
+        <section id="artist">
+            <h2> Chose your artist</h2>
+            <div class="cards-join">
+                <div class="card">
+                    <img src="artist1.png" alt="Artist1">
+                    <h3>Artist 1</h3>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, at. Temporibus corrupti voluptas esse expedita molestias illo tempore voluptate!
+                    </p>
+                    <button type="button">Select</button>
+                </div>
+                <div class="card">
+                    <img src="artist2.png" alt="Artist2">
+                    <h3>Artist 2</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis impedit, sapiente ut cupiditate suscipit sint unde enim commodi aperiam?
+                    </p>
+                    <button type="button">Select</button>
+                </div>
+            </div>
+            <div class="cards-join">
+                <div class="card">
+                    <img src="artist1.png" alt="Artist1">
+                    <h3>Artist 3</h3>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, at. Temporibus corrupti voluptas esse expedita molestias illo tempore voluptate!
+                    </p>
+                    <button type="button">Select</button>
+                </div>
+                <div class="card">
+                    <img src="artist2.png" alt="Artist2">
+                    <h3>Artist 4</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis impedit, sapiente ut cupiditate suscipit sint unde enim commodi aperiam?
+                    </p>
+                    <button type="button">Select</button>
+                </div>
+            </div>
+            <div class="cards-join">
+                <div class="card">
+                    <img src="artist1.png" alt="Artist1">
+                    <h3>Artist 5</h3>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, at. Temporibus corrupti voluptas esse expedita molestias illo tempore voluptate!
+                    </p>
+                    <button type="button">Select</button>
+                </div>
+                <div class="card">
+                    <img src="artist2.png" alt="Artist2">
+                    <h3>Artist 6</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis impedit, sapiente ut cupiditate suscipit sint unde enim commodi aperiam?
+                    </p>
+                    <button type="button">Select</button>
+                </div>
+            </div>
+            <div class="cards-join">
+                <div class="card">
+                    <img src="artist1.png" alt="Artist1">
+                    <h3>Artist 7</h3>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, at. Temporibus corrupti voluptas esse expedita molestias illo tempore voluptate!
+                    </p>
+                    <button type="button">Select</button>
+                </div>
+                <div class="card">
+                    <img src="artist2.png" alt="Artist2">
+                    <h3>Artist 8</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis impedit, sapiente ut cupiditate suscipit sint unde enim commodi aperiam?
+                    </p>
+                    <button type="button">Select</button>
+                </div>
+            </div>
+            <button type="button" onclick="back()">Back</button>
+            <button type="button" onclick="next()">Next</button>
+        </section>
+
+        <section id="food">
+            <h2> Chose your Food</h2>
+            <div class="cards-join">
+                <div class="card">
+                    <img src="food.png" alt="Artist1">
+                    <h3>Food 1</h3>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, at. Temporibus corrupti voluptas esse expedita molestias illo tempore voluptate!
+                    </p>
+                    <button type="button">Select</button>
+                </div>
+                <div class="card">
+                    <img src="artist2.png" alt="Artist2">
+                    <h3>Food 2</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis impedit, sapiente ut cupiditate suscipit sint unde enim commodi aperiam?
+                    </p>
+                    <button type="button">Select</button>
+                </div>
+            </div>
+            <div class="cards-join">
+                <div class="card">
+                    <img src="artist1.png" alt="Artist1">
+                    <h3>Food 3</h3>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, at. Temporibus corrupti voluptas esse expedita molestias illo tempore voluptate!
+                    </p>
+                    <button type="button">Select</button>
+                </div>
+                <div class="card">
+                    <img src="artist2.png" alt="Artist2">
+                    <h3>Food 4</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis impedit, sapiente ut cupiditate suscipit sint unde enim commodi aperiam?
+                    </p>
+                    <button type="button">Select</button>
+                </div>
+            </div>
+            <div class="cards-join">
+                <div class="card">
+                    <img src="artist1.png" alt="Artist1">
+                    <h3>Food 5</h3>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, at. Temporibus corrupti voluptas esse expedita molestias illo tempore voluptate!
+                    </p>
+                    <button type="button">Select</button>
+                </div>
+                <div class="card">
+                    <img src="artist2.png" alt="Artist2">
+                    <h3>Food 6</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis impedit, sapiente ut cupiditate suscipit sint unde enim commodi aperiam?
+                    </p>
+                    <button type="button">Select</button>
+                </div>
+            </div>
+            
+            <button type="button" onclick="back()">Back</button>
+            <button type="button" onclick="next()">Next</button>
+        </section>
+
+        <section id="games">
+            <h2> Chose your Games and Activites</h2>
+            <div class="cards-join">
+                <div class="card">
+                    <img src="artist1.png" alt="Artist1">
+                    <h3>Game 1</h3>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, at. Temporibus corrupti voluptas esse expedita molestias illo tempore voluptate!
+                    </p>
+                    <button type="button">Select</button>
+                </div>
+                <div class="card">
+                    <img src="artist2.png" alt="Artist2">
+                    <h3>Game 2</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis impedit, sapiente ut cupiditate suscipit sint unde enim commodi aperiam?
+                    </p>
+                    <button type="button">Select</button>
+                </div>
+            </div>
+            <div class="cards-join">
+                <div class="card">
+                    <img src="artist1.png" alt="Artist1">
+                    <h3>Game 3</h3>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, at. Temporibus corrupti voluptas esse expedita molestias illo tempore voluptate!
+                    </p>
+                    <button type="button">Select</button>
+                </div>
+                <div class="card">
+                    <img src="artist2.png" alt="Artist2">
+                    <h3>Game 4</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis impedit, sapiente ut cupiditate suscipit sint unde enim commodi aperiam?
+                    </p>
+                    <button type="button">Select</button>
+                </div>
+            </div>
+            </div>
+            <button type="button" onclick="back()">Back</button>
+            <button type="button" onclick="next()">Next</button>
+        </section>
+
+        <section id="pass">
+            <h2> Pick your pass</h2>
+            <div class="cards-join">
+                <div class="card-bronze">
+                    <img src="bronze.png" alt="B">
+                    <h3>BRONZE</h3>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus incidunt ratione sed rem sit consectetur alias repudiandae animi dolorum eius quae facere distinctio dignissimos voluptas velit illo nam in dolorem nulla, aliquam itaque officia voluptatum laborum dolores! Praesentium eius rem excepturi assumenda saepe ut ex dolorem blanditiis a?
+                    </p>
+                </div>
+                <div class="card-silver">
+                    <img src="bronze.png" alt="S">
+                    <h3>SILVER</h3>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus incidunt ratione sed rem sit consectetur alias repudiandae animi dolorum eius quae facere distinctio dignissimos voluptas velit illo nam in dolorem nulla, aliquam itaque officia voluptatum laborum dolores! Praesentium eius rem excepturi assumenda saepe ut ex dolorem blanditiis a?
+                    </p>
+                </div>
+                <div class="card-gold">
+                    <img src="gold.png" alt="G">
+                    <h3>GOLD</h3>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus incidunt ratione sed rem sit consectetur alias repudiandae animi dolorum eius quae facere distinctio dignissimos voluptas velit illo nam in dolorem nulla, aliquam itaque officia voluptatum laborum dolores! Praesentium eius rem excepturi assumenda saepe ut ex dolorem blanditiis a?
+                    </p>
+                </div>
+
+            </div>
+            <button type="button" onclick="back()">Back</button>
+            <button type="button" onclick="next()">Next</button>
+
+
+        </section>
+
+        <section id="review">
+            <h2> Review your Ticket</h2>
+            <hr>
+            Name: 
+            
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus voluptas tenetur ea accusantium esse id enim saepe commodi! Corrupti vero atque provident nemo? Sunt voluptatibus quos minus quod illo maxime.</p>
+            <button type="button" onclick="back()">Back</button>
+            <button type="button" onclick="next()">Next</button>
+
+        </section>
+
+        <section id="all">
+            <h2> My Passes</h2>
+            <button type="button" onclick="back()">Back</button>
+        </section>
+    <script src="script.js"></script>
+    </main>
+
     <footer>
 
     </footer>
+
 </body>
 </html>
